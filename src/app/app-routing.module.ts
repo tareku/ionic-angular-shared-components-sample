@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'first-test',
     loadChildren: () => import('./pages/first-test/first-test.module').then( m => m.FirstTestPageModule)
   },
+  {
+    path: 'second-test',
+    loadChildren: () => import('./pages/second-test/second-test.module').then( m => m.SecondTestPageModule)
+  },
 
 ];
 
