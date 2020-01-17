@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { LoginComponent } from './login/login.component';
-import { ProfileComponent } from './profile/profile.component';
+
+import { FirstCustomComponentComponent } from './first-custom-component/first-custom-component.component';
+import { SecondCustomComponentComponent } from './second-custom-component/second-custom-component.component';
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent,
-    ProfileComponent
+    FirstCustomComponentComponent,
+    SecondCustomComponentComponent
   ],
   imports: [
     CommonModule,
     IonicModule
   ],
   exports: [
-    LoginComponent, 
-    ProfileComponent
+    FirstCustomComponentComponent,
+    SecondCustomComponentComponent
   ]
 })
 export class SharedModule { }
