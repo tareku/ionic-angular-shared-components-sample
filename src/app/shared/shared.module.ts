@@ -4,11 +4,13 @@ import { IonicModule } from '@ionic/angular';
 
 import { FirstCustomComponentComponent } from './first-custom-component/first-custom-component.component';
 import { SecondCustomComponentComponent } from './second-custom-component/second-custom-component.component';
+import { CustomComponent } from './custom/custom.component';
 
 
 
 @NgModule({
   declarations: [
+    CustomComponent,
     FirstCustomComponentComponent,
     SecondCustomComponentComponent
   ],
@@ -17,6 +19,7 @@ import { SecondCustomComponentComponent } from './second-custom-component/second
     IonicModule
   ],
   exports: [
+    CustomComponent,
     FirstCustomComponentComponent,
     SecondCustomComponentComponent
   ]
